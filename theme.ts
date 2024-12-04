@@ -2,7 +2,7 @@ export const theme = {
   colors: {
     white: "#ffffff",
     black: "#000000",
-    primary: "#007bff",
+    primary: "#5a43f4",
     secondary: "#6c757d",
     success: "#28a745",
     danger: "#dc3545",
@@ -11,4 +11,12 @@ export const theme = {
     light: "#f8f9fa",
     dark: "#343a40",
   },
+  textVariants: {
+    headLine: {
+        fontSize: 32,
+        fontFamily: "System",
+        color: "black",
+        fontWeight: "bold",
+    }  
+  }
 };
