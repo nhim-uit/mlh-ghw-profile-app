@@ -41,35 +41,36 @@ or give random url, can share with anyone
 file .eslintrc.js
 
 // https://docs.expo.dev/guides/using-eslint/
-module.exports = {
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-native/all",
-    "expo",
-    "plugin:react/jsx-runtime",
-    "prettier",
-  ],
-  plugins: ["prettier", "react-native"],
-  rules: {
-    "prettier/prettier": "error",
-    "react-native/no-unused-styles": "error",
-    "react-native/no-inline-styles": "error",
-  }
-};
+
+  module.exports = {
+    extends: [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "plugin:react-native/all",
+      "expo",
+      "plugin:react/jsx-runtime",
+      "prettier",
+    ],
+    plugins: ["prettier", "react-native"],
+    rules: {
+      "prettier/prettier": "error",
+      "react-native/no-unused-styles": "error",
+      "react-native/no-inline-styles": "error",
+    }
+  };
 ---------------------------------------------
 create file .prettierrc
 
-{
-    "semi": true,
-    "singleQuote": false,
-    "trailingComma": "all",
-    "printWidth": 100,
-    "tabWidth": 2,
-    "useTabs": false,
-    "bracketSpacing": true,
-    "arrowParens": "always"
-}
+  {
+      "semi": true,
+      "singleQuote": false,
+      "trailingComma": "all",
+      "printWidth": 100,
+      "tabWidth": 2,
+      "useTabs": false,
+      "bracketSpacing": true,
+      "arrowParens": "always"
+  }
 ---------------------------------------------
 To use button, use:
 - TouchableOpacity
