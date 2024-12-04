@@ -39,9 +39,10 @@ or give random url, can share with anyone
 > npm install
 ---------------------------------------------
 file .eslintrc.js
-
+```
 // https://docs.expo.dev/guides/using-eslint/
-
+  
+ 
   module.exports = {
     extends: [
       "plugin:@typescript-eslint/recommended",
@@ -58,9 +59,11 @@ file .eslintrc.js
       "react-native/no-inline-styles": "error",
     }
   };
+```
 ---------------------------------------------
 create file .prettierrc
 
+```
   {
       "semi": true,
       "singleQuote": false,
@@ -71,6 +74,7 @@ create file .prettierrc
       "bracketSpacing": true,
       "arrowParens": "always"
   }
+```
 ---------------------------------------------
 To use button, use:
 - TouchableOpacity
