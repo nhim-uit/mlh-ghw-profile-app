@@ -1,7 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import { Alert, Linking, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Alert, Linking, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import { theme } from "./theme";
+import { Image } from "expo-image";
 import React from "react";
+// import MLHLogoColor from './assets/images/mlh-logo-color.png';
 
 export default function App() {
   const handleSignup = () => {
@@ -20,6 +22,12 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <Image 
+      style={styles.image} 
+      source= {require("./assets/images/mlh-logo.png")}
+      transition={1000}
+      contentFit="contain"
+      />
       <Text style={styles.headlineText}>Global Hack Week</Text>
       <Text style={styles.bodyText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Vitae architecto adipisci amet quod repudiandae! Quis, obcaecati minus. 
@@ -51,6 +59,10 @@ const styles = StyleSheet.create({
   headlineText: {
     ...theme.textVariants.headLine,
     fontWeight: "bold",
+  },
+  image: {
+    width: 200,
+    height: 200,
   },
   signupButton: {
     color: theme.colors.white,
